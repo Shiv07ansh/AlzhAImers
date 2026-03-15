@@ -58,8 +58,7 @@ A single end-to-end model doing both keyword detection and
 intent classification simultaneously exceeded the ESP32-S3's 
 SRAM budget and introduced unacceptable latency. The two-stage 
 cascade keeps KWS lightweight and always-on (~30ms, 130KB) 
-while SLU only activates on trigger (~75ms, 200KB). 
-Cascading inference architecture — the always-on KWS module triggers the SLU module only on keyword detection, minimising unnecessary compute cycles and power consumption.
+while SLU only activates on trigger (~70ms, 200KB).  
 Full details in [models/README.md](../models/README.md)
 
 **Why does KWS use audio features but SLU uses text?**  
@@ -85,7 +84,7 @@ accuracy drop.
 Full details in: [models/kws/training/README.md](../models/kws/training/README.md) — Quantization Decision
 
 **How accurate are the models?**  
-KWS: 97.2% | SLU: 95% — both on controlled single-speaker 
+KWS: 96.4% | SLU: 94.1% — both on controlled single-speaker 
 test set. Performance on unseen speakers degrades and has 
 not been formally benchmarked. This is the core limitation.  
 Full details in: [models/kws/model_card.md](../models/kws/model_card.md), [models/slu/model_card.md](../models/slu/model_card.md) , 
