@@ -14,14 +14,6 @@ system assumes none of those.
 
 ---
 
-## Demo
-
-[Video demonstration coming soon]
-
-Hardware photos: docs/demo.md
-
----
-
 ## System Architecture
 
 [system_architecture.png]
@@ -43,7 +35,7 @@ The full pipeline:
 8. All inference runs locally on ESP32-S3 — no internet required 
    except for optional email notification
 
-Full state machine documentation → docs/state_machine.md
+Full state machine documentation: [docs/state_machine.md](docs/state_machine.md)
 
 ---
 
@@ -125,7 +117,7 @@ AlzhAImers/
 ## Limitations
 
 This system has real limitations documented honestly.  
-→ See LIMITATIONS_AND_FUTURE_WORK.md
+See [LIMITATIONS_AND_FUTURE_WORK.md](LIMITATIONS_AND_FUTURE_WORK.md)
 
 Core open problems:
 - KWS and SLU trained on single speaker — degrades on unseen voices 
@@ -141,7 +133,7 @@ Core open problems:
 **AIoT Health: Medicine Reminder For The Elderly**  
 Shrivansh Pratap Singh, Manoj Kumar Gupta  
 Accepted: ICDECT-2025, Springer Lecture Notes in Networks and Systems (LNNS)  
-Preprint: [Zenodo — 10.5281/zenodo.19034554](https://zenodo.org/records/19034554)  
+Preprint: [Zenodo](https://zenodo.org/records/19034554)  
 arXiv: pending endorsement
 
 Check: [docs/paper_preprint.md](docs/paper_preprint.md) 
