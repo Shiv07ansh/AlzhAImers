@@ -72,4 +72,4 @@ but degrades noticeably in informal testing. The model was trained
 on a single speaker's voice. Generalisation to regional accents 
 and non-native pronunciations is the core unresolved problem.
 
-Full details: [../../LIMITATIONS_AND_FUTURE_WORK.md](../../LIMITATIONS_AND_FUTURE_WORK.md)
+Full details: [LIMITATIONS_AND_FUTURE_WORK.md](../../LIMITATIONS_AND_FUTURE_WORK.md)
