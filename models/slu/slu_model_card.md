@@ -90,4 +90,4 @@ non-native pronunciations, and non-English inputs is untested.
 The tokenizer vocabulary was built from a single speaker's 
 recordings and may not generalise to different speech patterns.
 
-Full details: [../../LIMITATIONS_AND_FUTURE_WORK.md](../../LIMITATIONS_AND_FUTURE_WORK.md)
+Full details: [LIMITATIONS_AND_FUTURE_WORK](../../LIMITATIONS_AND_FUTURE_WORK.md)
