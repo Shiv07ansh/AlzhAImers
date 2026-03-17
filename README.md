@@ -42,9 +42,9 @@ Full state machine documentation: [State Machine](docs/state_machine.md)
 ## Key Technical Details
 
 **KWS Model**
-- Architecture: 1D depthwise separable CNN
+- Architecture:2D CNN (Conv2D on MFE spectrogram features)
 - Input: 49×40 MFE feature matrix
-- Accuracy: 97.2%
+- Accuracy: 96.4%
 - Inference latency: ~30ms on ESP32-S3 @ 240MHz
 - Flash: ~0.7MB | SRAM: 130KB
 - Quantization: int8 post-training, <2% accuracy drop vs float32
@@ -52,7 +52,7 @@ Full state machine documentation: [State Machine](docs/state_machine.md)
 **SLU Model**
 - Architecture: Embedding + GlobalAveragePooling + Dense
 - Input: tokenized + padded text, vocab=1500, max_len=15
-- Accuracy: 95%
+- Accuracy:  94.1%
 - Inference latency: ~75ms
 - Flash: ~1.1MB | SRAM: 200KB
 - Quantization: int8 post-training
@@ -92,11 +92,8 @@ Full state machine documentation: [State Machine](docs/state_machine.md)
 
 **Total approximate cost: ~$15**
 
-Note: HC-SR04 echo pin outputs 5V — requires resistor divider 
-(2kΩ + 1kΩ) to protect 3.3V ESP32-S3 GPIO.
 
-Full wiring, pin connections, and component rationale → 
-docs/hardware_setup.md
+Full wiring, pin connections, and component rationale: [Hardware Setup](docs/hardware_setup.md)
 
 ---
 
@@ -136,7 +133,7 @@ Accepted: ICDECT-2025, Springer Lecture Notes in Networks and Systems (LNNS)
 Preprint: [Zenodo](https://zenodo.org/records/19034554)  
 arXiv: pending endorsement
 
-Check: [docs/paper_preprint.md](docs/paper_preprint.md) 
+Check: [Pre Print](docs/paper_preprint.md) 
 
 This repository contains the complete implementation including hardware 
 decision rationale, training decisions, engineering challenges and 
