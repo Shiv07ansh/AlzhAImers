@@ -16,7 +16,7 @@ system assumes none of those.
 
 ## System Architecture
 
-[system_architecture.png]
+![Sytem Architecture](docs/methodology_block.jpg)
 
 The full pipeline:
 
